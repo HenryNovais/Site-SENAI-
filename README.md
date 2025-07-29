@@ -16,12 +16,12 @@ Este projeto é baseado da página principal do site do SENAI Alagoas, desenvolv
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
-## 🚀 Como visualizar
-1. Clone o repositório:
-```bash
-git clone https://github.com/HenryNovais/Site-SENAI.git
-
 ## 📩 Contato
 Feito com 💙 por **Henry Calmon**  
 📧 henryncalmon05@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/henry-novais-calmon-06422424b)
+
+## 🚀 Como visualizar
+1. Clone o repositório:
+```bash
+git clone https://github.com/HenryNovais/Site-SENAI.git
