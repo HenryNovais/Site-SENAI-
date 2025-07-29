@@ -1,4 +1,4 @@
-# 🔧 Replica do Site do SENAI-AL
+# 🔧 Inspirado no Site do SENAI-AL
 
 Este projeto é baseado da página principal do site do SENAI Alagoas, desenvolvida com foco em prática de HTML e CSS. O objetivo foi estudar estrutura de layout, responsividade e boas práticas de estilização.
 
