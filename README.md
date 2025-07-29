@@ -20,3 +20,8 @@ Este projeto é baseado da página principal do site do SENAI Alagoas, desenvolv
 1. Clone o repositório:
 ```bash
 git clone https://github.com/HenryNovais/Site-SENAI.git
+
+## 📩 Contato
+Feito com 💙 por **Henry Calmon**  
+📧 henryncalmon05@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/henry-novais-calmon-06422424b)
