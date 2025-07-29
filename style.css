@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgba(163, 163, 163, 0.151);
+}
+
+header {
+    background-color: rgb(199, 199, 199);
+    box-shadow: 10px 10px 10px rgba(116, 114, 114, 0.24);
+    border: 2px solid rgba(116, 114, 114, 0.034);
+    padding: 20px;
+    z-index: 100000;
+    width: 100%;
+}
+
+header img {
+    width: 150px;
+    height: 40px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    transform: scale(1.05);
+    color: #007bff;
+    transition: 0.5s;
+}
+
+#cursos {
+    border: 0.5px solid rgb(0, 0, 158);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+#cursos:hover {
+    background-color: rgb(0, 0, 82);
+    color: #ccc;
+    font-weight: 500;
+}
+
+#imgmain {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    border-bottom: 1px solid #003a79;
+    margin-bottom: 20px;
+}
+
+#imgmain img {
+    border-radius: 20px;
+}
+
+#sidebar {
+    width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tit1 {
+    background-color: #f1f1f1;
+    width: 350px;
+    color: #003a79;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.course-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.course-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.course-container::-webkit-scrollbar-thumb {
+    background: #003a79;
+    border-radius: 4px;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    min-width: 300px;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.course-card h3 {
+    color: #003a79;
+    font-size: 1.2em;
+    margin: 10px 0;
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.course-card p {
+    color: #333;
+    font-size: 0.9em;
+    margin: 10px 0;
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    line-height: 1.2;
+}
+
+.preco {
+    color: #000;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.preco span {
+    font-weight: 400;
+}
+
+.confira-btn {
+    background-color: #FCC530;
+    color: #001834;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.confira-btn:hover {
+    background-color: #001834;
+    color: #FCC530;
+    transform: scale(1.05);
+}
+
+#tdscursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#tdscursos a {
+    color: #003a79;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tdscursos a:hover {
+    text-decoration: underline;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main {
+    width: calc(100% - 350px);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#principal {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    height: auto;
+}
+
+#principal img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+#principal h1 {
+    margin-bottom: 30px;
+}
+
+#principal h2 {
+    margin-top: 30px;
+}
+
+#principal input {
+    margin-top: 50px;
+    cursor: pointer;
+    height: 4.6875rem;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 17px;
+    text-align: center;
+    color: #001834;
+    background: #FCC530;
+    border-radius: 0.4em;
+    text-decoration: none;
+    padding: 1em 5em;
+    border: none;
+}
+
+#principal input:hover {
+    color: #FCC530;
+    background-color: #001834;
+    transition: 0.5s;
+    transform: scale(1.04);
+}
+
+aside {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+aside img {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+aside div {
+    display: flex;
+    gap: 10px;
+}
+
+aside div:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+aside h3,
+p {
+    width: 250px;
+}
+
+#not {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-left: 11%;
+}
+
+#not h1 {
+    margin-left: 0;
+}
+
+#not h4 {
+    margin-left: 0;
+    font-weight: 100;
+}
+
+#not img {
+    width: 298px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#noticias div {
+    width: 298px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.158);
+    color: #014898;
+    text-align: left;
+}
+
+#noticias div:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+#noticias p {
+    color: rgba(0, 0, 0, 0.438);
+}
+
+#noticias {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+#noticias h3 {
+    padding: 10px;
+}
+
+#noticias p {
+    padding-left: 10px;
+}
+
+footer {
+    margin-top: 400px;
+    background-color: #00356d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 70px;
+    width: 100%;
+}
+
+footer h1 {
+    font-size: 18pt;
+}
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#redes div {
+    display: flex;
+    gap: 30px;
+}
+
+#ct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+#redes a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+    .course-container {
+        max-width: 90%;
+    }
+
+    .course-card {
+        min-width: 250px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-container {
+        max-width: 100%;
+    }
+
+    .course-card {
+        min-width: 200px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tit1 {
+        width: 90%;
+        margin: 0 auto 20px;
+        border-radius: 0;
+    }
+
+    #sidebar {
+        width: 90%;
+        max-height: none;
+        margin-bottom: 40px;
+        position: static;
+        padding-bottom: 30px;
+    }
+
+    #tdscursos {
+        position: static;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #principal {
+        max-width: 100%;
+    }
+
+    aside {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #not {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    #imgmain {
+        padding: 30px;
+    }
+
+    #principal {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #principal input {
+        width: 100%;
+        padding: 1em 0;
+        font-size: 16px;
+        margin: 20px auto 0 auto;
+    }
+
+    #not {
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    #noticias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    #redes div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
